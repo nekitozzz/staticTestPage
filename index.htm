@@ -8,78 +8,102 @@
 </head>
 
 <body>
-    <h2></h2>
-    <video width="320" height="240" controls>
-        <source src="https://www.quirksmode.org/html5/videos/big_buck_bunny.mp4" type="video/mp4">
-    </video>
-    <audio controls src="https://mdn.github.io/learning-area/html/multimedia-and-embedding/video-and-audio-content/viper.mp3">
-    </audio>
-    <img src="https://avatars3.githubusercontent.com/u/727787?s=40&v=4" height="20" width="20">
-    <map name="primary">
-        <area shape="circle" coords="75,75,75" href="left.html">
-        <area shape="circle" coords="275,75,75" href="right.html">
-    </map>
-    <img usemap="#primary" src="http://placehold.it/350x150">
-    <a href="https://www.w3schools.com/html5" accesskey="h">HTML</a>
-    <a href="https://www.w3schools.com/css" accesskey="h">CSS</a>
-    Ensure that tables do not have the same summary and caption:
-    <table summary="Concerts">
-        <caption>Concerts</caption>
-        <tr>
-            <th>Date</th>
-            <th>Event</th>
-            <th>Venue</th>
-        </tr>
-        <tr>
-            <td>12 Feb</td>
-            <td>Waltz with Strauss</td>
-            <td>Main Hall</td>
-        </tr>
-    </table>
-    Ensure that tables do not have the same summary and caption:
-    <figure>
-        <figcaption>Concerts</figcaption>
+    <div class="rules-container">
+        <h2></h2>
+    </div>
+    <div class="rules-container">
+        <video width="320" height="240" controls>
+            <source src="https://www.quirksmode.org/html5/videos/big_buck_bunny.mp4" type="video/mp4">
+        </video>
+    </div>
+    <div class="rules-container">
+        <audio controls src="https://mdn.github.io/learning-area/html/multimedia-and-embedding/video-and-audio-content/viper.mp3">
+        </audio>
+    </div>
+    <div class="rules-container">
+        <img src="https://avatars3.githubusercontent.com/u/727787?s=40&v=4" height="20" width="20">
+    </div>
+    <div class="rules-container">
+        <map name="primary">
+            <area shape="circle" coords="75,75,75" href="left.html">
+            <area shape="circle" coords="275,75,75" href="right.html">
+        </map>
+    </div>
+    <div class="rules-container">
+        <img usemap="#primary" src="http://placehold.it/350x150">
+        <a href="https://www.w3schools.com/html5" accesskey="h">HTML</a>
+        <a href="https://www.w3schools.com/css" accesskey="h">CSS</a>
+    </div>
+    <div class="rules-container">
+        Ensure that tables do not have the same summary and caption:
         <table summary="Concerts">
+            <caption>Concerts</caption>
             <tr>
                 <th>Date</th>
                 <th>Event</th>
                 <th>Venue</th>
             </tr>
+            <tr>
+                <td>12 Feb</td>
+                <td>Waltz with Strauss</td>
+                <td>Main Hall</td>
+            </tr>
         </table>
-    </figure>
-    object should have 'alt' attr:
-    <object width="400" height="400" style="background: green"></object>
-    Ensures links have discernible text:
-    <a href="https://nekitozzz.github.io/staticTestPage/index.htm"></a>
-    Ensures every form element has a label:
-    <form action="/action_page.php">
-        <label for="male">Male</label>
-        <input type="radio" name="gender" id="male" value="male">
-        <br>
-        <input type="radio" name="gender" id="female" value="female">
-        <br>
-        <label for="other">Other</label>
-        <input type="radio" name="gender" id="other" value="other">
-        <br>
-        <br>
-        <input type="submit" value="Submit">
-    </form>
-    Provide every form control a label using aria-label, aria-labelledby label or explicit label.
-    <form action="/action_page.php">
-        <label for="male">Male</label>
-        <input type="radio" name="gender" id="male" value="male">
-        <br>
-        <input type="radio" name="gender" id="female" value="female" aria-describedby="info">
-        <p id="info">
-            This calendar shows the game schedule for the Boston Red Sox.
-        </p>
-        <br>
-        <label for="other">Other</label>
-        <input type="radio" name="gender" id="other" value="other">
-        <br>
-        <br>
-        <input type="submit" value="Submit">
-    </form>
+    </div>
+    <div class="rules-container">
+        Ensure that tables do not have the same summary and caption:
+        <figure>
+            <figcaption>Concerts</figcaption>
+            <table summary="Concerts">
+                <tr>
+                    <th>Date</th>
+                    <th>Event</th>
+                    <th>Venue</th>
+                </tr>
+            </table>
+        </figure>
+    </div>
+    <div class="rules-container">
+        object should have 'alt' attr:
+        <object width="400" height="400" style="background: green"></object>
+    </div>
+    <div class="rules-container">
+        Ensures links have discernible text:
+        <a href="https://nekitozzz.github.io/staticTestPage/index.htm"></a>
+    </div>
+    <div class="rules-container">
+        Ensures every form element has a label:
+        <form action="/action_page.php">
+            <label for="male">Male</label>
+            <input type="radio" name="gender" id="male" value="male">
+            <br>
+            <input type="radio" name="gender" id="female" value="female">
+            <br>
+            <label for="other">Other</label>
+            <input type="radio" name="gender" id="other" value="other">
+            <br>
+            <br>
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+    <div class="rules-container">
+        Provide every form control a label using aria-label, aria-labelledby label or explicit label.
+        <form action="/action_page.php">
+            <label for="male">Male</label>
+            <input type="radio" name="gender" id="male" value="male">
+            <br>
+            <input type="radio" name="gender" id="female" value="female" aria-describedby="info">
+            <p id="info">
+                This calendar shows the game schedule for the Boston Red Sox.
+            </p>
+            <br>
+            <label for="other">Other</label>
+            <input type="radio" name="gender" id="other" value="other">
+            <br>
+            <br>
+            <input type="submit" value="Submit">
+        </form>
+    </div>
 </body>
 
 </html>
