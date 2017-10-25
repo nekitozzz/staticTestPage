@@ -116,6 +116,12 @@
             <input type="submit" value="Submit">
         </form>
     </div>
+    <div class="rules-container">
+        Ensures iframe and frame elements contain a non-empty title attribute
+        <iframe src="http://example.com"></iframe>
+        TODO: hide this error if aria-hidden is true
+        <iframe src="http://example.com" aria-hidden="true"></iframe>
+    </div>
 </body>
 
 </html>
