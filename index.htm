@@ -124,7 +124,7 @@
     </div>
     <div class="rules-container">
         Ensures input type="image" elements have alternate text
-        <input id="image" type="image" width="100" height="30" src="https://raw.githubusercontent.com/mdn/learning-area/master/html/forms/image-type-example/login.png">
+        <input id="image" type="image" width="100" height="30" src="http://localhost:55555/1.jpg">
     </div>
     <div class="rules-container">
         Ensures links have discernible text
@@ -134,7 +134,14 @@
     </div>
     <div class="rules-container">
         Ensures the contrast between foreground and background colors meets WCAG 2 AA contrast ratio thresholds
-        <div style="height: 200px; background: aliceblue; color: #eaf2f9;"><h2>Text with low contrast</h2></div>
+        <div style="height: 200px; background: aliceblue; color: #eaf2f9;">
+            <h2>Text with low contrast</h2>
+        </div>
+    </div>
+    <div class="rules-container">
+        Ensures iframe and frame elements contain a unique title attribute
+        <iframe title="non-unique-title" src="http://example.com"></iframe>
+        <iframe title="non-unique-title" src="http://example.com"></iframe>
     </div>
 </body>
 
